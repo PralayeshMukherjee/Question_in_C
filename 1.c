@@ -140,3 +140,29 @@ int main() {
     }
     return 0;
 }
+
+// 7.Given a continuous stream of numbers (positive or negative, excluding 0), find the number of odd numbers entered, number of even numbers entered and the total number of numbers entered. When 0 is entered, the program should stop.
+#include <stdio.h>
+int main() {
+    int i,N,oddCount=0,evenCount=0,count=0;
+    for(int i=1;i<__INT_MAX__;i++) {
+        printf("Enter the number => \n");
+        scanf("%d", &N);
+        if(N==0) {
+            break;
+        }else {
+            count++;
+            if(N%2==0) {
+                evenCount++;
+                printf("this number is even \n");
+            }else {
+                oddCount++;
+                printf("this number is odd \n");
+            }
+        }
+    }
+    printf("The total number I entered here is => %d\n",count);
+    printf("The total odd number I entered here is => %d\n",oddCount);
+    printf("The total even number I entered here is => %d\n",evenCount);
+    return 0;
+}
