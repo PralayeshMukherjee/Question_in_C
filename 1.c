@@ -166,3 +166,35 @@ int main() {
     printf("The total even number I entered here is => %d\n",evenCount);
     return 0;
 }
+
+// 8.Given starting number and the common difference, find the Nth term of an AP.
+#include <stdio.h>
+int main() {
+    int i,startingNo,commonDifference,Nthterm,sum=0;
+    printf("Enter the first term => \n");
+    scanf("%d", &startingNo);
+    printf("Enter the common difference => \n");
+    scanf("%d", &commonDifference);
+    printf("Enter the term that you want => \n");
+    scanf("%d", &Nthterm);
+    sum = startingNo;
+    for(i=1;i<Nthterm;i++) {
+        sum +=commonDifference;
+    }
+    printf("The term that you want is => %d\n",sum);
+}
+
+//             OR
+
+#include <stdio.h>
+int main() {
+    int i,startingNo,commonDifference,Nthterm,N;
+    printf("Enter the first term => \n");
+    scanf("%d", &startingNo);
+    printf("Enter the common difference => \n");
+    scanf("%d", &commonDifference);
+    printf("Enter the term that you want => \n");
+    scanf("%d", &Nthterm);
+    N = startingNo + (Nthterm - 1)* commonDifference;
+    printf("The term that you want is => %d\n",N);
+}
