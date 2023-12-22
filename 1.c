@@ -1,5 +1,5 @@
 // 1.Find the sum of the first N natural numbers.
-
+/*
 #include <stdio.h> 
 int main() {
     int i,N,sum = 0;
@@ -231,4 +231,22 @@ int main() {
     commonRatio = sqrt(Nthterm-1);
     N = startingNo*commonRatio;
     printf("The term that you want is => %d\n",N);
+}
+*/
+// 10.Given starting number and the common difference, find the sum of N terms of an AP.
+#include <stdio.h>
+int main() {
+    int i,startingNo,commonDifference,Nthterm,sum=0;
+    printf("Enter the first term => \n");
+    scanf("%d", &startingNo);
+    printf("Enter the common difference => \n");
+    scanf("%d", &commonDifference);
+    printf("Enter the term that you want => \n");
+    scanf("%d", &Nthterm);
+
+    for(i=1;i<=Nthterm;i++) {
+        sum += startingNo;
+        startingNo +=commonDifference;
+    }
+    printf("The Sum is => %d\n",sum);
 }
