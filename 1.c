@@ -188,7 +188,7 @@ int main() {
 
 #include <stdio.h>
 int main() {
-    int i,startingNo,commonDifference,Nthterm,N;
+    int startingNo,commonDifference,Nthterm,N;
     printf("Enter the first term => \n");
     scanf("%d", &startingNo);
     printf("Enter the common difference => \n");
@@ -196,5 +196,39 @@ int main() {
     printf("Enter the term that you want => \n");
     scanf("%d", &Nthterm);
     N = startingNo + (Nthterm - 1)* commonDifference;
+    printf("The term that you want is => %d\n",N);
+}
+
+// 9.Given starting number and the common ratio, find the Nth term of a GP.
+#include <stdio.h>
+int main() {
+    int i,startingNo,commonRatio,Nthterm,product=1;
+    printf("Enter the first term => \n");
+    scanf("%d", &startingNo);
+    printf("Enter the Common Ratio => \n");
+    scanf("%d", &commonRatio);
+    printf("Enter the term that you want => \n");
+    scanf("%d", &Nthterm);
+    product = startingNo;
+    for(i=1;i<Nthterm;i++) {
+        product *=commonRatio;
+    }
+    printf("The term that you want is => %d\n",product);
+}
+
+//          OR ToDo
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int startingNo,Nthterm,N;
+    double commonRatio;
+    printf("Enter the first term => \n");
+    scanf("%d", &startingNo);
+    printf("Enter the common difference => \n");
+    scanf("%f", &commonRatio);
+    printf("Enter the term that you want => \n");
+    scanf("%d", &Nthterm);
+    commonRatio = sqrt(Nthterm-1);
+    N = startingNo*commonRatio;
     printf("The term that you want is => %d\n",N);
 }
