@@ -250,3 +250,21 @@ int main() {
     }
     printf("The Sum is => %d\n",sum);
 }
+
+// 11.Given starting number and the common ratio, find the sum of N terms of a GP
+#include <stdio.h>
+int main() {
+    int i,startingNo,commonRatio,Nthterm,product=1,sum=0;
+    printf("Enter the first term => \n");
+    scanf("%d", &startingNo);
+    printf("Enter the Common Ratio => \n");
+    scanf("%d", &commonRatio);
+    printf("Enter the term that you want => \n");
+    scanf("%d", &Nthterm);
+    product *= startingNo;
+    for(i=1;i<=Nthterm;i++) {
+        sum += product;
+        product *=commonRatio;
+    }
+    printf("The term that you want is => %d\n",sum);
+}
