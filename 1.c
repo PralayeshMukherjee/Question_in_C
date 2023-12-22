@@ -1,4 +1,5 @@
 // 1.Find the sum of the first N natural numbers.
+
 #include <stdio.h> 
 int main() {
     int i,N,sum = 0;
@@ -15,6 +16,7 @@ int main() {
             }
         }
     }
+    return 0;
 }
 // 2.Find the average of the first N natural numbers.
 #include <stdio.h> 
@@ -34,6 +36,7 @@ int main() {
             }
         }
     }
+    return 0;
 }
 // 3.Find the factorial of a number N.
 #include <stdio.h> 
@@ -54,6 +57,7 @@ int main() {
             }
         }
     }
+    return 0;
 }
 // 4.Given 3 numbers, find their maximum and minimum
 // ToDo: if 1st and 2nd are same but less than 3rd 
@@ -113,4 +117,26 @@ int main() {
             printf("A, B and C are same");
         }
     }
+    return 0;
+}
+
+// 5.Given a continuous stream of numbers (positive or negative, excluding 0), find the number is even or odd.When 0 is entered, the program should stop.
+#include <stdio.h>
+int main() {
+    int i,N;
+    for(int i=1;i<__INT_MAX__;i++) {
+        printf("Enter the number => \n");
+        scanf("%d", &N);
+        if(N==0) {
+            printf("this is not a valid input \n");
+            break;
+        }else {
+            if(N%2==0) {
+                printf("this number is even \n");
+            }else {
+                printf("this number is odd \n");
+            }
+        }
+    }
+    return 0;
 }
