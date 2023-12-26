@@ -1,5 +1,5 @@
 // 1.Find the sum of the first N natural numbers.
-
+/*
 #include <stdio.h> 
 int main() {
     int i,N,sum = 0;
@@ -268,3 +268,4 @@ int main() {
     }
     printf("The term that you want is => %d\n",sum);
 }
+*/
