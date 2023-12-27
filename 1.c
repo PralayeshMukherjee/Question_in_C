@@ -293,3 +293,28 @@ int main() {
     
     return 0;
 }
+
+// 13.Find the all prime numbers less than a given number N.
+#include <stdio.h>
+static void mynumber(int mynum) {
+    int n = 0;
+    for(int i=2;i<(mynum/2)+1;i++) {
+        if(mynum%i==0) {
+            n++;
+            break;
+        }
+    }
+    if(n==0) {
+        printf("%d ", mynum);
+    }
+}
+int main() {
+    int N;
+    printf("Enter the number => \n");
+    scanf("%d", &N);
+    printf("All prime numbers less than %d are \n", N);
+    for(int i=2;i<=N;i++) {
+        mynumber(i);
+    }
+    return 0;
+}
