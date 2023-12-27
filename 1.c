@@ -1,5 +1,5 @@
 // 1.Find the sum of the first N natural numbers.
-
+/*
 #include <stdio.h> 
 int main() {
     int i,N,sum = 0;
@@ -268,22 +268,25 @@ int main() {
     }
     printf("The term that you want is => %d\n",sum);
 }
-
+*/
 // 12.Find whether a given number is prime or not.
 // ToDo
 #include <stdio.h>
 int main() {
-    int N;
+    int N,i,prime;
     printf("Enter the number => \n");
     scanf("%d", &N);
-    if(N==1 || N==2 || N==3 || N==5 || N==7) {
-        printf("It is a prime number");
-    } else{
-        if(N%2==0 || N%3==0 || N%5==0 || N%7==0) {
-            printf("It is not a prime number");
-        }else{
-            printf("It is a prime number");
+
+    for(i=2;i<N;i++) {
+        if((N%i)==0) {
+            prime = 0;
         }
+    }
+    
+    if(prime==1) {
+        printf("%d is a prime number",N);
+    }else{
+        printf("%d is not a prime number",N);
     }
     return 0;
 }
