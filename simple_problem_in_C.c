@@ -374,3 +374,34 @@ int main() {
     printf("The temperature in Fahrenheit is => %f\n",F);
     return 0;
 }
+
+// 17.Find square roots of a quadratic equation, given the coefficients of the equation. If not real roots, report the same.
+#include <math.h>
+#include <stdio.h>
+int main() {
+    // Quadratuc Equation is => ax^2 + bx + c 
+    double a,b,c,discriminant,root1,root2,realPart,imagPart;
+    printf("ax^2 + bx + c = 0, where a, b and c are real numbers \n");
+    printf("Enter the first variable a => \n");
+    scanf("%lf", &a);
+    printf("Enter the second variable b => \n");
+    scanf("%lf", &b);
+    printf("Enter the third variable => \n");
+    scanf("%lf", &c);
+    discriminant = b*b - 4*a*c;
+
+    if(discriminant == 0){
+        root1 = -b / 2*a;
+        root2 = root1;
+        printf("root1 => %.2lf, root2 => %.2lf \n",root1,root2);
+    } else if(discriminant>0) {
+        root1 = (-b + sqrt(discriminant)) / (2*a);
+        root2 = (-b - sqrt(discriminant)) / (2*a);
+        printf("root1 => %.2lf, root2 => %.2lf \n",root1,root2);
+    } else if(discriminant<0){
+        realPart = -b / (2 * a);
+        imagPart = sqrt(-discriminant) / (2 * a);
+        printf("root1 = %.2lf+%.2lfi and root2 = %.2f-%.2fi", realPart, imagPart, realPart, imagPart);
+    }
+    return 0;
+}
