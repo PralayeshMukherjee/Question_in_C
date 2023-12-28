@@ -1,5 +1,5 @@
 // 1.Find the sum of the first N natural numbers.
-/*
+
 #include <stdio.h> 
 int main() {
     int i,N,sum = 0;
@@ -363,7 +363,7 @@ int main() {
     C = (F-32)*5/9;
     printf("The temperature in Celcius is => %f\n",C);
     return 0;
-}*/
+}
 // Part-2 (Convert a given Celcius temperature to Fahrenheit temperature)
 #include <stdio.h>
 int main() {
