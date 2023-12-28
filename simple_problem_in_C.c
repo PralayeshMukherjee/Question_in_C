@@ -352,7 +352,7 @@ int main() {
     return 0;
     
 }
-
+*/
 // 16.Convert a given Celcius temperature to Fahrenheit temperature and vice-versa.
 // Part-1 (Convert a given Fahrenheit temperature to Celcius temperature)
 #include <stdio.h>
@@ -362,15 +362,5 @@ int main() {
     scanf("%f", &F);
     C = (F-32)*5/9;
     printf("The temperature in Celcius is => %f\n",C);
-    return 0;
-}*/
-// Part-2 (Convert a given Celcius temperature to Fahrenheit temperature)
-#include <stdio.h>
-int main() {
-    float F,C;
-    printf("Enter temperature in Celcius => \n");
-    scanf("%f", &C);
-    F = C * 9/5 + 32;
-    printf("The temperature in Fahrenheit is => %f\n",F);
     return 0;
 }
