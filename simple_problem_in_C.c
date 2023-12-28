@@ -335,3 +335,20 @@ int main() {
     return 0;
 
 }
+
+// 15.Swap two numbers without using a temporary variable.
+#include <stdio.h>
+int main() {
+    int a,b;
+    printf("Enter your first variable => \n");
+    scanf("%d", &a);
+    printf("Enter your second variable => \n");
+    scanf("%d", &b);
+    printf("Your first and second variable are %d, %d respectively\n",a,b);
+    a = a+b;
+    b = a-b;
+    a = a-b;
+    printf("Now after changing your first and second variable are %d, %d repectively\n",a,b);
+    return 0;
+    
+}
