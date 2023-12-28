@@ -318,3 +318,20 @@ int main() {
     }
     return 0;
 }
+
+// 14.Swap two numbers using a temporary variable.
+#include <stdio.h>
+int main() {
+    int a,b,c;
+    printf("Enter your first number => \n");
+    scanf("%d", &a);
+    printf("Enter your second number => \n");
+    scanf("%d", &b);
+    c=a;
+    a=b;
+    b=c;
+    printf("The value of first number is %d\n",a);
+    printf("The value of second number is %d\n",b);
+    return 0;
+
+}
