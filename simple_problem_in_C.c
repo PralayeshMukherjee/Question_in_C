@@ -1,5 +1,5 @@
 // 1.Find the sum of the first N natural numbers.
-
+/*
 #include <stdio.h> 
 int main() {
     int i,N,sum = 0;
@@ -403,5 +403,22 @@ int main() {
         imagPart = sqrt(-discriminant) / (2 * a);
         printf("root1 = %.2lf+%.2lfi and root2 = %.2f-%.2fi", realPart, imagPart, realPart, imagPart);
     }
+    return 0;
+}
+*/
+// 18.Find the sum of the digits of a given number.
+#include <stdio.h>
+int main() {
+    int n,m,sum=0;
+    printf("Enter your number => \n");
+    scanf("%d", &n);
+    while (n>0)
+    {
+        m = n%10;
+        sum += m;
+        n /=10;
+    }
+    
+    printf("The sum of all the digits is => %d",sum);
     return 0;
 }
