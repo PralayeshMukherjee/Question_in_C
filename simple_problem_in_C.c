@@ -1,5 +1,5 @@
 // 1.Find the sum of the first N natural numbers.
-/*
+
 #include <stdio.h> 
 int main() {
     int i,N,sum = 0;
@@ -405,7 +405,7 @@ int main() {
     }
     return 0;
 }
-*/
+
 // 18.Find the sum of the digits of a given number.
 #include <stdio.h>
 int main() {
