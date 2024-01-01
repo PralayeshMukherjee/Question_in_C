@@ -18,6 +18,7 @@ int main() {
     }
     return 0;
 }
+
 // 2.Find the average of the first N natural numbers.
 #include <stdio.h> 
 int main() {
@@ -38,6 +39,7 @@ int main() {
     }
     return 0;
 }
+
 // 3.Find the factorial of a number N.
 #include <stdio.h> 
 int main() {
@@ -59,6 +61,7 @@ int main() {
     }
     return 0;
 }
+
 // 4.Given 3 numbers, find their maximum and minimum
 // ToDo: if 1st and 2nd are same but less than 3rd 
 #include <stdio.h> 
@@ -354,7 +357,7 @@ int main() {
 }
 
 // 16.Convert a given Celcius temperature to Fahrenheit temperature and vice-versa.
-// Part-1 (Convert a given Fahrenheit temperature to Celcius temperature)
+//////// Part-1 (Convert a given Fahrenheit temperature to Celcius temperature)
 #include <stdio.h>
 int main() {
     float F,C;
@@ -364,7 +367,8 @@ int main() {
     printf("The temperature in Celcius is => %f\n",C);
     return 0;
 }
-// Part-2 (Convert a given Celcius temperature to Fahrenheit temperature)
+
+//////// Part-2 (Convert a given Celcius temperature to Fahrenheit temperature)
 #include <stdio.h>
 int main() {
     float F,C;
