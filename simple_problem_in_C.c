@@ -425,3 +425,17 @@ int main() {
     printf("The sum of all the digits is => %d",sum);
     return 0;
 }
+
+// 19.Whether a given year is a leap year or not? (Feel free to google what's a leap if you're unsure)
+#include <stdio.h>
+int main() {
+    int year;
+    printf("Enter the year =>\n");
+    scanf("%d",&year);
+    if(year%4==0) {
+        printf("%d is a leap year\n",year);
+    }else{
+        printf("%d is not a leap year\n",year);
+    }
+    return 0;
+}
