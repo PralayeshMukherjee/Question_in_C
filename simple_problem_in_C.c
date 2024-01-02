@@ -439,3 +439,16 @@ int main() {
     }
     return 0;
 }
+
+// 20.Find sum of all odd numbers from 1 to N
+#include <stdio.h>
+int main() {
+    int num,sum=0,count;
+    printf("Enter your number\n");
+    scanf("%d",&num);
+    for(count=1;count<=num;count+=2) {
+       sum += count;
+    }
+    printf("The sum of all numbers is %d",sum);
+    return 0;
+}
