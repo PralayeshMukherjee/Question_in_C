@@ -275,25 +275,24 @@ int main() {
 // 12.Find whether a given number is prime or not.
 #include <stdio.h>
 int main() {
-    int N,i,prime=1;
-    printf("Enter the number => \n");
-    scanf("%d", &N);
-
-    if(N==0 || N==1) {
-        printf("%d is not a prime number",N);
+    int num,count,lastcheck=0;
+    printf("Enter your Number => \n");
+    scanf("%d", &num);
+    if(num==2 || num==1) {
+        printf("%d is a prime number \n",num);
     }else{
-        for(i=2;i<N;i++) {
-            if((N%i)==0) {
-              prime = 0;
+        for(count=2;count<num;count++) {
+            if(num%count==0) {
+                lastcheck = 1;
+                break;
             }
         }
-        if(prime==1) {
-           printf("%d is a prime number",N);
+        if(lastcheck==1) {
+            printf("%d is not a prime number\n",num);
         }else{
-           printf("%d is not a prime number",N);
+            printf("%d is a prime number",num);
         }
     }
-    
     return 0;
 }
 
